@@ -16,9 +16,19 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from core.views import query_examples
+from core.views import query_examples,questao01,questao02,questao03,questao04,questao05,questao06,questao07,questao08,questao09,questao10
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('teste1/',query_examples),
+    path('questao1/',questao01),
+    path('questao2/',questao02),
+    path('questao3/',questao03),
+    path('questao4/',questao04),
+    path('questao5/',questao05),
+    path('questao6/',questao06),
+    path('questao7/',questao07),
+    path('questao8/',questao08),
+    path('questao9/',questao09),
+    path('questao10/',questao10),
 ]

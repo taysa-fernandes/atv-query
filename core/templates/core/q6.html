@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Livros sem avaliação</title>
+</head>
+<body>
+    <h1>Livros sem avaliação</h1>
+    <ul>
+        {% for rating in list_books_without_reviews %}
+            <li>{{ rating.book }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>

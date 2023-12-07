@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Avaliação maior ou igual que 4</title>
+</head>
+<body>
+    <h1>Avaliação maior ou igual que 4</h1>
+    <ul>
+        {% for rating in num_books_of_assessment %}
+            <li>{{ rating.book }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>

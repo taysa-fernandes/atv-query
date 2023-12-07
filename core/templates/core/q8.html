@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Livros com resumos longos</title>
+</head>
+<body>
+    <h1>Livros com resumos longos</h1>
+    <ul>
+        {% for book in books_with_long_summaries %}
+            <li>{{ book.title}}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>

@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Perfil com Website especifico</title>
+</head>
+<body>
+    <h1>Perfil com Website especifico</h1>
+    <ul>
+        {% for user in user_profile %}
+            <li>{{ user.user }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>

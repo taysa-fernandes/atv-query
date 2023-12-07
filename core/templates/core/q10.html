@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Livros com múltiplas tags</title>
+</head>
+<body>
+    <h1>Livros com múltiplas tags</h1>
+    <ul>
+        {% for book in books_with_specific_tags %}
+            <li>{{ book.title }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>

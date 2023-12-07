@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Avaliações de um autor</title>
+</head>
+<body>
+    <h1>Avaliações de um autor</h1>
+    <ul>
+        {% for review in reviews_of_author_books %}
+            <li>{{ review.rating}}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
